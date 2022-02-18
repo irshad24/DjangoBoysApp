@@ -26,6 +26,9 @@ SECRET_KEY = 'django-insecure-*&9j46%r1_cweg6+6%)(urx5#(1f)&@)8m0vo(6*7@l7kr$*i-
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -38,8 +41,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-]
+    'tailwind',
+    'theme',
+    'main',
 
+
+
+]
+TAILWIND_APP_NAME = 'app'
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
