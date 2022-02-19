@@ -22,6 +22,6 @@ app_name="main"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
-    re_path(r'^favicon\.ico$', favicon_view),
+ 
 
 ]
